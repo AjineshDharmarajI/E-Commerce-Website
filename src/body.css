@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Splits the screen into two columns */
+    grid-template-rows: repeat(2, 1fr); /* Splits the screen into two rows */
+    height: 100%; /* Full height of the viewport */
+    margin-left: 3cm;
+  }
+  
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc; /* Just for visualization */
+  }
+  
+  .chart-placeholder {
+    font-size: 24px;
+    font-weight: bold;
+  }
+ .grid-item img{
+    width: 17m;
+    height: 10cm;
+    
+  }
+  .inner-grid-item h3{
+    text-align: center;
+  }

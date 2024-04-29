@@ -1,0 +1,54 @@
+.ad-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .ad-coupon {
+    text-align: center;
+  }
+  
+  .btn-model {
+    margin-bottom: 10px;
+  }
+  
+  .coupon-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+    
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+  
+  .ad-input[type="text"],
+  .ad-input[type="number"],
+  .ad-input[type="date"],
+  button[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }

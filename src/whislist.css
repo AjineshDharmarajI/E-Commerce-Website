@@ -1,0 +1,86 @@
+.full-whislist{
+  background-color: rgb(255, 255, 255);
+}
+.wish{
+    text-align: center;
+    font-family: 'Budapest';
+  }
+  .wishlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .wishlist-item {
+    position: relative; /* Make the position relative for absolute positioning of delete icon */
+    width: calc(16.66% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px auto 0 auto; /* Center the container horizontally */
+    background-color: #f73f3f4a;
+  }
+  .wishlist-item img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensure the image takes up the full width of its container */
+  }
+  .image-container {
+    position: relative;
+  }
+  .fa-trash{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: rgba(241, 241, 241, 0.896);
+    cursor: pointer;
+    background-color: rgb(201, 35, 112); /* Background color for the delete icon */
+    padding: 5px; /* Add padding to the delete icon */
+    border-radius: 10%; /* Make the delete icon circular */
+    transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+  }
+  .fa-trash:hover {
+    transform:scale(1.1);
+  }
+
+  .product-name p {
+    margin-top: 4%;
+    font-size: medium;
+    margin-bottom: 1%;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .move-to-cart-btn {
+    margin-top: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff8c00;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: 16px auto 5px auto; /* Align the button to the center horizontally */
+  }
+  .price {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    text-align: center;
+    justify-content: center; /* Align content horizontally */
+    
+  }
+  .price p {
+    margin-right: 10px; /* Add space between the prices */
+    margin-top: 2%;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .price del {
+    color: rgb(151, 147, 147); /* Style the original price */
+    font-size: small;
+    margin-top: -6%;
+  }
+  .line {
+    border-top: 1px solid rgb(128, 125, 125); /* Adjust the border properties to create the line */
+    width: 100%;
+  }

@@ -1,0 +1,140 @@
+  body {
+    font-family: 'Archer', sans-serif;
+    margin: 0;
+    /* padding: 10px 100px; */
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+    
+  }
+  .full{
+    width: 100%;
+    background-color: white;
+  }
+  tr{
+    font-family: 'Archer';
+  }
+  .tab{
+    padding:20px;
+  }
+  .table{
+    display: flex;
+  justify-content: center;
+  }
+  .cart{
+    text-align: center;
+    font-family: 'Budapest';
+}
+.cart .heading{
+  margin-top: 0;
+  padding-top: 2%;
+}
+
+  .tab {
+    width: 80%;
+    border-collapse: collapse;
+    
+    /* border: black 1.5px solid; */
+  }
+
+  .tab th, .tab td {
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+ .tab th {
+    
+    color: #1b1a1a;
+    padding: 12px;
+  }
+
+  .tab td {
+    padding: 10px 16px; /*Adjusted padding for the specified ratio*/
+  }
+
+  .cart_img {
+    max-width: 140px;
+    max-height: 140px;
+    /* display: block; */
+    margin: 0 auto;
+  }
+  #prod{
+      display: inline-flex;
+      padding-left: 10px;
+  }
+  .details{
+    padding-left: 25px;
+    padding-top: 12px;
+  }
+  .prod_name {
+    margin: 5px 0; /*Reduced margin for h3, p, and del tags */
+}
+  .original-price {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: line-through;
+    color: #999;
+  }
+  .price {
+    display: flex;
+    justify-content: space-around; /* Align items vertically */
+  }
+  .price p {
+    margin-right: 10px; /* Add space between the prices */
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .price del {
+    color: rgb(151, 147, 147); /* Style the original price */
+    font-size: small;
+    margin-top: 0%;
+  }
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    /* border: 1px black solid; */
+    border-radius: 1px;
+  }
+
+  .quan_button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    background-color: transparent;
+  }
+
+  .quan_input {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    
+  }
+  .remove_button {
+  padding: 6px 12px;
+  margin-top: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #382828;
+  border: 1px solid #999797;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.bill_button {
+  padding: 6px 12px;
+  margin-top: 5px;
+  margin-left: 5%;
+  font-size: 14px;
+  cursor: pointer;
+  color: #382828;
+  border: 1px solid #999797;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.remove_button:hover,.bill_button:hover {
+  background-color: #999797;
+}

@@ -1,0 +1,213 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  /* @font-face {
+    font-family: 'Budapest';
+    src: url('path/to/budapest.woff2') format('woff2'),
+     url('path/to/budapest.woff') format('woff');
+    
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+  .product-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 25px auto 5px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+
+  .product-images {
+    flex: 1;
+  }
+  #mainImage{
+      width: 550px;
+  }
+
+  .small-images {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .small-image {
+    width: 90px;
+    height: 90px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .product-details {
+    flex: 1;
+    padding: 0 10px;
+    /* letter-spacing: 0.5px;
+    word-spacing: 1px; */
+  }
+
+  .buttons {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .button {
+    flex: 1;
+    padding: 5px 9px;
+    margin-right: 10px;
+    background-color:transparent;
+    color: #ff3e6c;
+    border: #ff3e6c solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .button:hover{
+    color: whitesmoke;
+    background-color: #ff3e6c;
+  }
+  .product-info {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    font-size: 130%;
+  }
+  /* .share{
+    align-content: flex-end;
+    align-items: center;
+  } */
+  .product-info h2{
+    margin-bottom: 12px;
+    margin-top: 0px;
+  }
+
+  .product-info i {
+    margin-right: 5px;
+  }
+
+  .review-stars {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  
+  .price {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  .price p {
+    margin-right: 10px; /* Add space between the prices */
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-weight: bolder;
+    font-size: 120%;
+  }
+  .price del {
+    color: rgb(151, 147, 147); /* Style the original price */
+    /* font-size:100% ; */
+    margin-top: 0%;
+  }
+  .rating-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    width: 125px;
+    border:rgba(128, 128, 128, 0.644) solid 1px;
+    color: rgb(0, 0, 0);
+  }
+  .rating-container:hover{
+    border: black solid 1px;
+  }
+
+  .rating-value {
+    margin-left: 10px;
+  }
+
+  .star-icon {
+    color: #63e6bfe4;
+  }
+
+  .divider {
+    position: absolute;
+    height: 80%;
+    width: 1px;
+    background-color:rgba(128, 128, 128, 0.633);
+    top: 10%;
+    bottom: 10%;
+    left: 44%;
+    transform: translateX(-50%);
+  }
+
+  .quantity-box {
+    margin-top: 10px;
+  }
+  #product-color{
+    font-weight: bolder;
+  }
+
+  .product-details-text {
+    margin-top: 10px;
+  }
+  .product-frame p{
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .product-frame button{
+    background-color:transparent;
+    color: #ff3e6c;
+    border: #ff3e6c solid 1px;
+    padding: 5px 9px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 520;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .product-frame button:hover{
+    color: whitesmoke;
+    background-color: #ff3e6c;
+  }
+  .product-size p{
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .product-size button{
+    background-color:transparent;
+    color: #ff3e6c;
+    border: #ff3e6c solid 1px;
+    padding: 5px 9px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 520;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  .product-size button:hover{
+    color: whitesmoke;
+    background-color: #ff3e6c;
+  }
+  #product-color{
+    letter-spacing: 1px;
+  }
+  /* .divider2 {
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background-color:rgba(208, 0, 0, 0.633);
+    top: 10%;
+    bottom: 10%;
+    left: 44%;
+    transform: translateX(-50%);
+  } */
+
+  .whatsapp img{
+    width: 180px;
+    height: auto;
+  }

@@ -1,0 +1,112 @@
+.total-price-container {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.payment-details,
+.total-price-details {
+    text-align: center;
+    /* Center align the text */
+}
+.btn-apply{
+    padding: 1% 3%;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #999797;
+}
+.btn-apply:hover{
+    background-color: #999797;
+}
+
+.total-price-details .coupon-p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#coupon-error {
+    color: red;
+}
+.gen-error{
+    color: red;
+}
+
+.coupon-section .coupon-input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    width: 50%;
+    margin-right: 5%;
+}
+
+#coupon-discount,
+#discount {
+    color: #388e3c;
+    font-weight: 600;
+}
+
+.coupon-section #apply-coupon-btn {
+    border: 1.4px solid #ff3f63;
+    color: #ff3f63;
+    font-weight: bold;
+    padding: 6px 20px;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.coupon-section #apply-coupon-btn:hover {
+    background-color: #ff3f621f;
+}
+
+.Buy-now {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Buy-now #total-product-buy {
+    border: 1.4px solid #ff3f63;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 20px;
+    outline: none;
+    background-color: #ff3f63;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Buy-now #total-product-buy:hover {
+    background-color: #ee264a;
+}
+
+.line {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+.btn-bill{
+    margin-left: 5%;
+    padding: 1% 2%;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #999797;
+}
+.btn-cart{
+    padding: 1% 2%;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid #999797;
+}
+.btn-bill:hover,.btn-cart:hover{
+    background-color: #999797;
+}

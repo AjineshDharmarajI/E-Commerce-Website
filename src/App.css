@@ -1,38 +1,471 @@
-.App {
-  text-align: center;
+html{
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+/* nav.scrolled {
+  box-shadow: 5px 5px 10px rgb(160, 160, 160);
+} */
+.landing-page{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav{
+  /* border-bottom: 1px solid rgb(25, 25, 25);
+  box-shadow: 5px 5px 10px gray; */
+  padding-top: 0.3cm;
+  position: fixed;
+  justify-content: flex-start;
+  width: 100%;
+  height: 2.6cm;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+   
+}
+.logo{
+  border-radius: 50%;
+  margin:0;
+  /* padding-top: 0.6cm; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link ul{
+  list-style-type: none;
+  margin: 0;
+}
+.link ul li{
+  display: inline;
+  padding: 0.7cm;
+}
+nav button {
+  border: none;
+  background-color: white;
+}
+nav li a{
+  text-decoration: none;
+  font-size: 0.6cm;
+  color: #f1b396;
+}
+nav button{
+  font-size: 0.4cm;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+.link ul a {
+   
+  position: relative;
+
+}
+
+.link ul a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+  display: inline;
+}
+
+.link ul a:hover::after {
+  width: 77%;
+}
+
+
+
+.dropbtn {
+  color: #f1b396;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0.5cm 0.2cm 0.5cm 0.5cm;
+
+  font-size: 0.6cm;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.2cm 0.5cm ;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.2cm;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropbtn svg{
+  /* padding-left: 0.2cm; */
+  margin-left: 0.2cm;
+  margin: 0;
+}
+
+/* svg:hover  {
+  transform: rotate(-180deg);
+  transition: 0.2s;
+} */
+.dropbtn:hover {
+  svg {
+      transform: rotate(-180deg);
+      transition: 0.2s;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.dropdown li i {
+  color: #f1b396;
+}
+
+.search {
+  height: 0.9cm;  /* Adjust height as needed */
+  width: 8cm;    /* Adjust width as needed */
+
+  /* Unique styles */
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 5px;     /* Rounded corners */
+  padding: 5px 10px;     /* Add padding inside the input */
+  font-size: 16px;       /* Set font size */
+  background-color: #f5f5f5; /* Light background color */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+  margin-left: 0.2cm;
+}
+
+.search:focus {
+  /* Additional style on focus */
+  outline: none; /* Remove default outline */
+  border-color: #333; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a slight focus shadow */
+}
+
+.icon svg{
+  font-size: 0.7cm;
+  color: #f1b396;
+  padding: 0.5cm;
+  /* margin-top: 0.3cm; */
+}
+.icon svg:hover{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+.main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  color: black;
+  padding-top: 1cm;
+  /* background-color: rgb(255, 99, 71); */
+}
+
+.main-heading h1{
+  font-size: 1.5cm;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+.main-heading h3{
+  font-size: 0.8cm;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+.main-heading img{
+  padding-top: 15%;
+}
+.main-heading .img{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+.fa-solid.fa-heart.clicked {
+  color: red;
+}
+.fa-solid.fa-cart-shopping.clicked{
+  color: red;
+}
+
+
+
+
+.productimgcoll {
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; 
+    padding: 1%;
+}
+
+.productimg{
+    flex-shrink: 0; 
+    /* background-color: gray; */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin:1%;
+    padding: 1%;
+    width: 280px;
+    background-color: aliceblue;
+    border: 1px solid gray;
+}
+.productimg .description{
+  font-size: 0.4cm;
+}
+.productimg .amount{
+  font-size: 0.4cm;
+  padding: 0.2cm 0;
+}
+.productimg .amount s{
+  color: red;
+}
+hr{
+    color: black;
+}
+.productimg img:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.productimg:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+    cursor: pointer;
+}
+
+.clicked{
+    /* background-color:red; */
+    color: rgb(235, 12, 86);
+    
+}
+.iconbox{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.iconbox i {
+
+padding: 5px;
+
+}
+.art_read{
+  display: flex;
+  justify-content: space-between;
+}
+.more-items-link:hover{
+  color: #0056b3;
+}
+
+/* ------------------------------Scroll--------------------------------- */
+
+
+nav.scrolled {
+  box-shadow: 5px 5px 10px rgb(65, 65, 65);
+}
+
+
+
+/* ----------------------------Footer---------------------------------- */
+
+
+.full-contact {
+  padding-top: 1cm;
+  width: 100%;
+  height: 30%;
+  background-color: black;
+ 
+}
+.full-contact a:hover{
+  color: red;
+}
+.full-contact .copyright{
+  margin: 0;
+  color: white;
+  text-align: center;
+  padding: 0.5cm 0cm;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.5px solid rgb(194, 194, 194);
+}
+
+a {
+  text-decoration: none;
+  color: #f1b396;
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+.one h4,
+.two h4,
+.three h4,
+.four h4 {
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.one ul li,
+.two ul li,
+.three ul li {
+  padding: 0.2cm;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.four p svg {
+  padding-right: 0.5cm;
+  color: white;
+}
+.four p span{
+  color: #f1b396;
+}
+.four p{
+  margin: 0;
+}
+
+.four .mail,
+.contact {
+  display: flex;
+  align-items: flex-start;
+}
+.mail h4,.contact h4{
+  margin-bottom: 0;
+  color: #f1b396;
+}
+.mail h4 svg,.contact h4 svg{
+  padding-right: 0.5cm;
+  color: white;
+}
+.four .social .icon{
+  display: flex;
+  justify-content:center;
+}
+.four .social .icon svg{
+  padding: 0cm 0.3cm;
+  color: #f1b396;
+  font-size: 0.7cm;
+}
+.four .address{
+  color: #f1b396;
+  display: flex;
+}
+
+
+
+/* --------------------------------------------sign in/sign up--------------------------------------- */
+
+/* 
+.form-container {
+ 
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} */
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* Adjust width as needed */
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(203, 203, 203);
+}
+
+
+.form-container h2 {
+  text-align: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  /* margin-bottom: 10px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container .submit-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container .submit-button:hover {
+  background-color: #0056b3;
+}
+
+.form-container .toggle-button {
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container .toggle-button:hover {
+  text-decoration: underline;
 }

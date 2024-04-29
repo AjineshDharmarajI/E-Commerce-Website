@@ -1,0 +1,21 @@
+.full1 {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+    background-color: rgb(94, 94, 94); /* Add background color if needed */
+    z-index: 100; /* Adjust z-index to ensure it appears above other content */
+    /* border-bottom: 1px solid white; */
+    align-items: center;
+    height: 2.3cm;
+}
+
+.icon {
+    display: flex;
+}
+.logo img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    padding: 0.2cm 0 0.2cm 0.4cm;
+}
