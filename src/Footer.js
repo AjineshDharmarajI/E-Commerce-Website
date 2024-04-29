@@ -49,19 +49,19 @@ function Footer() {
                     </p>
                     <div className="mail">
                         <h4>
-                            <a href="mailto:22am007@kpriet.ac.in">
-                                <FontAwesomeIcon icon={faEnvelope} /> 22am007@kpriet.ac.in
+                            <a href="mailto:krishzaara1985@gmail.com">
+                                <FontAwesomeIcon icon={faEnvelope} /> krishzaara1985@gmail.com
                             </a>
                         </h4>
                     </div>
                     <div className="contact">
-                        <h4><FontAwesomeIcon icon={faPhone} /> +91 1234567890</h4>
+                        <h4><FontAwesomeIcon icon={faPhone} /> +91 8148196646</h4>
                     </div>
                     <div className="social">
                         <h4>SOCIAL</h4>
                         <div className="icon">
                             <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-                            <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+                            <a href="https://www.instagram.com/shri_afreshhomeinteriors" target='_blank' rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
                             <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
                         </div>
                     </div>

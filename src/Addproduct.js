@@ -84,13 +84,21 @@ function Addproduct() {
 
           <div className="col-md-3">
             <div className="section-header">
-              <p>Price</p>
+              <p> MRP Price</p>
             </div>
             <input type="text" className='pro-input' id="wul" name="user_name" placeholder="price" required />
           </div>
         </div>
 
         <div className="row">
+        <div className="col-md-3">
+            <div className="section-header">
+              <p>Sales Price</p>
+            </div>
+            <input type="text" className='pro-input' id="wul" name="user_name" placeholder="price" required />
+          </div>
+          <div className="col-md-1"></div>
+
           <div className="col-md-3">
             <div className="section-header">
               <p>Quantity</p>
@@ -101,18 +109,18 @@ function Addproduct() {
 
           <div className="col-md-3">
             <div className="section-header">
-              <p>Supplier Name</p>
+              <p>Categories</p>
             </div>
-            <input type="text" className='pro-input' id="wul" name="user_name" placeholder="Supplier Name" required />
+            <select id="drop-down" name="ratio" required>
+              <option value="">Select Ratio</option>
+              <option value="1:1">Art</option>
+              <option value="2:1">Music</option>
+              <option value="3:1">Literature</option>
+              <option value="4:1">Sculpture</option>
+              <option value="5:1">Aesthetics</option>
+            </select>
           </div>
           <div className="col-md-1"></div>
-
-          <div className="col-md-3">
-            <div className="section-header">
-              <p>Supplier Number</p>
-            </div>
-            <input type="text" className='pro-input' id="wul" name="user_name" placeholder="Supplier Number" required />
-          </div>
         </div>
 
         <div className="row thr">
