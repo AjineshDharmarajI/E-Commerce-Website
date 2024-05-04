@@ -72,7 +72,7 @@ const Art = ({ addToCart, addToWishlist, cartItems, setCartItems, onImageClick  
     },
   ];
 
-  const initialDisplayLimit = 7; // Initial number of products to display
+  const initialDisplayLimit = 6; // Initial number of products to display
 
   // State to track the number of products displayed
   const [displayLimit, setDisplayLimit] = useState(initialDisplayLimit);

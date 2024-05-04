@@ -25,6 +25,10 @@ import AddProduct1 from './Addproduct';
 import Payment_detail from './payment_details.js';
 import AddPromotion from './Add_promotion';
 import Art2 from './art_full_product.js';
+import Music2 from './music_full_product.js';
+import Literature2 from './literature_full_product.js';
+import Aesthectics2 from './Aesthectics_full_product.js';
+import Sclupture2 from './Sclupture_full_product.js';
 
 function App() {
   const scrolled = useScroll();
@@ -66,6 +70,10 @@ function App() {
             <Route path="/addpromotion" element={<AddPromotion />} />
             <Route path="/art" element={<Art />} />
             <Route path="/art_full_product" element={<Art2 addToCart={addToCart} addToWishlist={addToWishlist} cartItems={cartItems} setCartItems={setCartItems} onImageClick={handleImageClick} />} />
+            <Route path="/music_full_product" element={<Music2 addToCart={addToCart} addToWishlist={addToWishlist} cartItems={cartItems} setCartItems={setCartItems} onImageClick={handleImageClick} />} />
+            <Route path="/literature_full_product" element={<Literature2 addToCart={addToCart} addToWishlist={addToWishlist} cartItems={cartItems} setCartItems={setCartItems} onImageClick={handleImageClick} />} />
+            <Route path="/Aesthectics_full_product" element={<Aesthectics2 addToCart={addToCart} addToWishlist={addToWishlist} cartItems={cartItems} setCartItems={setCartItems} onImageClick={handleImageClick} />} />
+            <Route path="/Sclupture_full_product" element={<Sclupture2 addToCart={addToCart} addToWishlist={addToWishlist} cartItems={cartItems} setCartItems={setCartItems} onImageClick={handleImageClick} />} />
 
           </Routes>
         </React.Fragment>

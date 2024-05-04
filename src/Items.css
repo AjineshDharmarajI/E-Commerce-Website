@@ -16,10 +16,10 @@ body {
 
   .product-container {
     display: flex;
-    max-width: 1200px;
-    margin: 25px auto 5px auto;
+    max-width: 100%;
     padding: 20px;
     border: 1px solid #ddd;
+    background-color: white;
   }
 
   .product-images {
@@ -94,7 +94,7 @@ body {
 
   
   .price {
-    display: flex;
+    /* display: flex; */
     align-items: center; /* Align items vertically */
   }
   .price p {

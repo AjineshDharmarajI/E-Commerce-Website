@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useState} from 'react';
+import {Link} from 'react-router-dom'
 
 import './App.css';
 import Product from './Product'
@@ -46,15 +47,58 @@ const Aesthectics = ({ addToCart,addToWishlist, cartItems, setCartItems,onImageC
       originalPrice: 5000,
       salePrice: 4000
     },
+    {
+      id:'AE6',
+      imgSrc: require("./pic2.jpg"),
+      altText: "image",
+      description: "Divine Ram Darbar 3D Relief Mural",
+      originalPrice: 5000,
+      salePrice: 4000
+    },
+    {
+      id:'AE7',
+      imgSrc: require("./pic2.jpg"),
+      altText: "image",
+      description: "Divine Ram Darbar 3D Relief Mural",
+      originalPrice: 5000,
+      salePrice: 4000
+    },
+    {
+      id:'AE8',
+      imgSrc: require("./pic2.jpg"),
+      altText: "image",
+      description: "Divine Ram Darbar 3D Relief Mural",
+      originalPrice: 5000,
+      salePrice: 4000
+    },
     
   ];
 
+  const initialDisplayLimit = 6; // Initial number of products to display
+
+  // State to track the number of products displayed
+  const [displayLimit, setDisplayLimit] = useState(initialDisplayLimit);
+
+  // Function to toggle display limit
+  const toggleDisplayLimit = () => {
+    setDisplayLimit(products.length); // Set display limit to total number of products
+  };
+
   return (
-    <div className="category" id='Aesthetics'>
-      <h2 style={{paddingLeft:"0.3cm",paddingTop:"1cm",margin:"0"}}>AESTHECTICS</h2>
+    <div>
+      <div className="category" id='aesthectics'>
+        <div className='aesthectics_read'>
+          <h2 style={{ paddingLeft: "0.3cm", paddingTop: "1cm", margin: "0" }}>Aesthectics</h2>
+
+          {products.length > initialDisplayLimit && (
+            <Link to="/Aesthectics_full_product" className="more-items-link" onClick={toggleDisplayLimit} style={{ paddingRight: "0.3cm", paddingTop: "1cm", margin: "0", fontSize: "0.5cm" }} >
+              More Items
+            </Link>
+          )}
+        </div>
       <hr />
       <div className="productimgcoll">
-        {products.map((product, index) => (
+      {products.slice(0, displayLimit).map((product, index) => (
           <Product
             key={index}
             {...product}
@@ -66,6 +110,7 @@ const Aesthectics = ({ addToCart,addToWishlist, cartItems, setCartItems,onImageC
           />
         ))}
       </div>
+    </div>
     </div>
   );
 };

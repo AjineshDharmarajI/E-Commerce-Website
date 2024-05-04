@@ -213,6 +213,8 @@ nav button{
 
 
 
+
+
 .fa-solid.fa-heart.clicked {
   color: red;
 }
@@ -293,6 +295,11 @@ padding: 5px;
 }
 .more-items-link:hover{
   color: #0056b3;
+}
+
+.music_read,.aesthectics_read,.literature_read,.Sclupture_read{
+  display: flex;
+  justify-content: space-between;
 }
 
 /* ------------------------------Scroll--------------------------------- */

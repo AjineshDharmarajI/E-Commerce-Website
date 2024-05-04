@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useState} from 'react';
+import {Link} from 'react-router-dom'
 
 import './App.css';
 import Product from './Product'
@@ -46,15 +47,58 @@ const Sclupture = ({ addToCart,addToWishlist, cartItems, setCartItems,onImageCli
       originalPrice: 6000,
       salePrice: 5500
     },
+    {
+      id:'S6',
+      imgSrc: require("./pic10.jpg"),
+      altText: "image",
+      description: "Divine Ram Darbar 3D Relief Mural",
+      originalPrice: 6000,
+      salePrice: 5500
+    },
+    {
+      id:'S7',
+      imgSrc: require("./pic10.jpg"),
+      altText: "image",
+      description: "Divine Ram Darbar 3D Relief Mural",
+      originalPrice: 6000,
+      salePrice: 5500
+    },
+    {
+      id:'S8',
+      imgSrc: require("./pic10.jpg"),
+      altText: "image",
+      description: "Divine Ram Darbar 3D Relief Mural",
+      originalPrice: 6000,
+      salePrice: 5500
+    },
     
   ];
 
+  const initialDisplayLimit = 6; // Initial number of products to display
+
+  // State to track the number of products displayed
+  const [displayLimit, setDisplayLimit] = useState(initialDisplayLimit);
+
+  // Function to toggle display limit
+  const toggleDisplayLimit = () => {
+    setDisplayLimit(products.length); // Set display limit to total number of products
+  };
+
   return (
-    <div className="category" id='Sculpture'>
-      <h2 style={{paddingLeft:"0.3cm",paddingTop:"1cm",margin:"0"}}>SCLUPTURE</h2>
+    <div>
+      <div className="category" id='Sclupture'>
+        <div className='Sclupture_read'>
+          <h2 style={{ paddingLeft: "0.3cm", paddingTop: "1cm", margin: "0" }}>Sclupture</h2>
+
+          {products.length > initialDisplayLimit && (
+            <Link to="/Sclupture_full_product" className="more-items-link" onClick={toggleDisplayLimit} style={{ paddingRight: "0.3cm", paddingTop: "1cm", margin: "0", fontSize: "0.5cm" }} >
+              More Items
+            </Link>
+          )}
+        </div>
       <hr />
       <div className="productimgcoll">
-        {products.map((product, index) => (
+      {products.slice(0, displayLimit).map((product, index) => (
           <Product
             key={index}
             {...product}
@@ -66,6 +110,7 @@ const Sclupture = ({ addToCart,addToWishlist, cartItems, setCartItems,onImageCli
           />
         ))}
       </div>
+    </div>
     </div>
   );
 };
