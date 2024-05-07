@@ -1,6 +1,7 @@
 // ProductImageDescription.js
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link component
+import './App.css';
 
 const ProductImageDescription = ({ imgSrc, altText, description, originalPrice, salePrice,onImageClick }) => {
 

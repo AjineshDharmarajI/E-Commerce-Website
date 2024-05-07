@@ -1,5 +1,6 @@
 // ProductIcons.js
 import React from 'react';
+import './App.css';
 
 const ProductIcons = ({ isClicked, cartClicked, handleHeartClick, handleAddToCart }) => {
   return (

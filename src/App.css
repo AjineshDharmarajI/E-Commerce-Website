@@ -245,18 +245,22 @@ nav button{
     margin:1%;
     padding: 1%;
     width: 280px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background: rgba(255, 255, 255, 0.5); /* Adjust the opacity as needed */
+  backdrop-filter: blur(10px);
     border: 1px solid gray;
 }
 .productimg .description{
   font-size: 0.4cm;
+  color: black;
 }
 .productimg .amount{
   font-size: 0.4cm;
   padding: 0.2cm 0;
+  color: red;
 }
 .productimg .amount s{
-  color: red;
+  color: black;
 }
 hr{
     color: black;
