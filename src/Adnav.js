@@ -14,6 +14,7 @@ export default function Adnav() {
             <li><Link to="/Addproduct">Add Product</Link></li>
             <li><Link to="/Addpromotion">Add Promotion</Link></li> {/* Change href to Link */}
             <li><a href='#'>Contact</a></li>
+            <li><Link to='/Admin_communication'>Communication</Link></li>
           </ul>
         </div>
       </div>

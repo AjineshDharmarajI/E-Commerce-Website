@@ -29,6 +29,7 @@ import Music2 from './music_full_product.js';
 import Literature2 from './literature_full_product.js';
 import Aesthectics2 from './Aesthectics_full_product.js';
 import Sclupture2 from './Sclupture_full_product.js';
+import Admin_communication from './Admin_communication.js';
 
 function App() {
   const scrolled = useScroll();
@@ -74,6 +75,7 @@ function App() {
             <Route path="/literature_full_product" element={<Literature2 addToCart={addToCart} addToWishlist={addToWishlist} cartItems={cartItems} setCartItems={setCartItems} onImageClick={handleImageClick} />} />
             <Route path="/Aesthectics_full_product" element={<Aesthectics2 addToCart={addToCart} addToWishlist={addToWishlist} cartItems={cartItems} setCartItems={setCartItems} onImageClick={handleImageClick} />} />
             <Route path="/Sclupture_full_product" element={<Sclupture2 addToCart={addToCart} addToWishlist={addToWishlist} cartItems={cartItems} setCartItems={setCartItems} onImageClick={handleImageClick} />} />
+            <Route path='/Admin_communication' element={<Admin_communication />}/>
 
           </Routes>
         </React.Fragment>

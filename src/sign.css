@@ -1,65 +1,174 @@
-.form-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgb(203, 203, 203);
+/* .form-container {
+    background-color: white;
+    width: 23%;
+    box-shadow: 0 0 10px rgb(55, 55, 55);
 }
 
-.form-container .heading {
+.form-container label {
+    justify-content: space-between;
+}
+
+.Form input[type=text],
+.Form input[type=password],
+.Form input[type=email] {
+    width: 100%;
+    padding: 0.15cm;
+    margin: 8px 0;
+}
+
+.Form label {
+    text-align: start;
+}
+
+.sign_button button {
+    background-color: blue;
+    border: 1px solid gray;
+    width: 40%;
+    color: white;
+    padding: 0.15cm 0cm;
+    align-items: center;
+
+
+}
+.sign_button{
+    display: flex;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.heading {
     text-align: center;
 }
 
-.form-container .Form {
+.error_password {
+    font-size: 0.4cm;
+    color: red;
+
+    display: inline-block;
+}
+
+.ad_password span {
+    width: 85%;
+    display: block;
+   
+    padding-left: 0.3cm;
+}
+
+.error_phone {
+    color: red;
+    font-size: 0.4cm;
+}
+
+.error_email {
+    color: red;
+    font-size: 0.4cm;
+} */
+
+
+.sign_full {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Align form items horizontally */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .sign {
+    display: flex;
+  }
+  .Sign_form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(178, 178, 178);
+    padding-top: 2cm;
+  }
+  .Sign_form input[type="text"]:focus,
+  .Sign_form input[type="password"]:focus,
+  .Sign_form input[type="email"]:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+  }
+  .sig_err span {
+    width: 80%;
+    display: block;
+   color: red;
+    padding-left: 0.3cm;
+    margin-bottom: 0.4cm;
 }
-
-.form-container .Input[type="text"],
-.form-container .Input[type="email"],
-.form-container .Input[type="password"] {
-    margin-bottom: 10px; /* Add some space between inputs */
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Times New Roman', Times, serif;
-    width: 100%;
-    box-sizing: border-box;
+.error_phone,.error_email {
+    color: red;
+    font-size: 0.4cm;
+    margin-bottom: 0.4cm;
 }
-
-.form-container .submit-button {
-    margin-top: 10px; /* Add space above the button */
+.input-wrapper {
+    position: relative;
+  }
+  
+  .input-wrapper input[type="text"],
+  .input-wrapper input[type="password"],
+  .input-wrapper input[type="email"] {
     padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .input-wrapper.active input[type="text"] ~ label,
+  .input-wrapper.active input[type="password"] ~ label,
+  .input-wrapper.active input[type="email"] ~ label {
+    top: -3px;
+    font-size: 12px;
+    color: #007bff;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+  }
+  
+  .input-wrapper input[type="text"]:focus ~ label,
+  .input-wrapper input[type="password"]:focus ~ label,
+  .input-wrapper input[type="email"]:focus ~ label {
+    top: -3px;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .input-wrapper label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: top 0.3s, left 0.3s, font-size 0.3s, color 0.3s;
+    pointer-events: none;
+    color: #aaa;
+  }
+  
+  .toggle-password i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .toggle-password:hover {
+    text-decoration: underline;
+  }
+
+
+  .sign_button button[type="submit"] {
+    padding: 10px 15px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
+    margin-top: 0.5cm;
 }
 
-.form-container .submit-button:hover {
+.sign_button button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.form-container .toggle-button {
-    padding: 5px 10px;
-    background-color: transparent;
-    color: #007bff;
-    border: none;
-    cursor: pointer;
-}
-
-.form-container .toggle-button:hover {
-    text-decoration: underline;
-}
-
-.form-container .p {
-    font-size: 0.4cm;
-    text-align: center;
-}
+  

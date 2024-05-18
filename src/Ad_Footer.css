@@ -1,0 +1,57 @@
+
+.Ad_full-contact {
+    padding-top: 1cm;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+   }
+  .Ad_full-contact a:hover{
+    color: rgb(251, 71, 71);
+  }
+  .Ad_full-contact .Ad_copyright{
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 0.5cm 0cm;
+  }
+
+.Ad_con h4{
+    
+    color: white;
+    font-size: 0.4cm;
+  }
+  .Ad_con h5{
+    color: white;
+  }
+  .Ad_con{
+    display: flex;
+    justify-content: space-around;
+  }
+  .Ad_one svg{
+    padding-right: 0.2cm;
+    color: white;
+  }
+  .Ad_one h4, .Ad_one p{
+    padding-bottom: 0.3cm;
+    color: #f1b396;
+  }
+  .Ad_communication{
+    text-align: center;
+  }
+  .Ad_two .Ad_icon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8cm;
+    
+  }
+  .Ad_two .Ad_icon a{
+    padding-left: 0.4cm;
+  }
+  .Ad_two .Ad_social{
+    text-align: center;
+  }
+  .Ad_copyright{
+    border-top: 2px solid white;
+  }
+  
+

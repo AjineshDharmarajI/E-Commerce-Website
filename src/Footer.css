@@ -71,7 +71,11 @@
   }
   .mail h4,.contact h4{
     margin-bottom: 0;
+    margin-top: 0.2cm;
     color: #f1b396;
+  }
+  .contact h4{
+    padding-bottom: 0.4cm;
   }
   .mail h4 svg,.contact h4 svg{
     padding-right: 0.5cm;
