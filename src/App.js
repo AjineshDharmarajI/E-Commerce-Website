@@ -124,6 +124,14 @@ function Navbar({ scrolled, cartItems }) {
                 <a href="#Sculpture">SCULPTURE</a>
                 <a href="#Music">MUSIC</a>
                 <a href="#Aesthetics">AESTHETICS</a>
+                <a href="#Aesthetics">AESTHETICS</a>
+                <a href="#Aesthetics">AESTHETICS</a>
+                <a href="#Aesthetics">AESTHETICS</a>
+                <a href="#Aesthetics">AESTHETICS</a>
+                <a href="#Aesthetics">AESTHETICS</a>
+                <a href="#Aesthetics">AESTHETICS</a>
+                <a href="#Aesthetics">AESTHETICS</a>
+                <a href="#Aesthetics">AESTHETICS</a>
               </div>
             </div>
             <li><a href='#Footer'>Contact</a></li>

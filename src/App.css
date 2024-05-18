@@ -81,12 +81,12 @@ nav button{
 .dropbtn {
   color: #f1b396;
   font-family: 'Times New Roman', Times, serif;
-  padding: 0.5cm 0.2cm 0.5cm 0.5cm;
+  padding: 0.5cm 0.2cm 0.5cm 0.5cm; 
 
   font-size: 0.6cm;
   border: none;
   cursor: pointer;
-}
+} 
 
 .dropdown {
   position: relative;
@@ -104,10 +104,10 @@ nav button{
 
 .dropdown-content a {
   color: black;
-  padding: 0.2cm 0.5cm ;
+  
   text-decoration: none;
   display: block;
-  margin-bottom: 0.2cm;
+ 
 }
 
 

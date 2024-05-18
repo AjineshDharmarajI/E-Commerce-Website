@@ -3,6 +3,9 @@ import './App.css';
 import Product from './Product';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 
 const Art = ({ addToCart, addToWishlist, cartItems, setCartItems, onImageClick  }) => {
   const products = [
@@ -84,9 +87,8 @@ const Art = ({ addToCart, addToWishlist, cartItems, setCartItems, onImageClick  
 
   return (
     <div className="category" id='Art'>
-      <h2 style={{ paddingLeft: "0.3cm", paddingTop: "1cm", margin: "0" }}>All Category</h2>
       <div className='art_read'>
-      <h2 style={{ paddingLeft: "0.3cm", paddingTop: "1cm", margin: "0" }}>Art</h2>
+      <h2 style={{ paddingLeft: "0.3cm", paddingTop: "1cm", margin: "0" }}>Newly Launched</h2>
       {/* Display link to Art2.js if there are more products */}
       {products.length > initialDisplayLimit && (
         <Link to="/art_full_product" className="more-items-link" onClick={toggleDisplayLimit} style={{ paddingRight: "0.3cm", paddingTop: "1cm", margin: "0",fontSize:"0.5cm" }} >

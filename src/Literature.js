@@ -73,6 +73,7 @@ const Literature = ({ addToCart,addToWishlist, cartItems, setCartItems,onImageCl
     },
     
   ];
+  
 
 
   const initialDisplayLimit = 6; // Initial number of products to display
